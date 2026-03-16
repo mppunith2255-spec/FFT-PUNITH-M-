@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shapes Animation</title>
+
+<style>
+
+body{
+    background:#f2f2f2;
+    text-align:center;
+    margin-top:50px;
+}
+
+/* 1 Right to Left */
+.shape1{
+    width:80px;
+    height:80px;
+    background:red;
+    position:relative;
+    animation:rightleft 4s infinite alternate;
+}
+
+@keyframes rightleft{
+    from{left:300px;}
+    to{left:0;}
+}
+
+/* 2 Left to Right */
+.shape2{
+    width:80px;
+    height:80px;
+    background:blue;
+    border-radius:50%;
+    position:relative;
+    animation:leftright 4s infinite alternate;
+}
+
+@keyframes leftright{
+    from{left:0;}
+    to{left:300px;}
+}
+
+/* 3 Up Down + 2 Color Change */
+.shape3{
+    width:120px;
+    height:60px;
+    position:relative;
+    animation:updown 3s infinite alternate;
+}
+
+@keyframes updown{
+    0%{
+        top:0;
+        background:green;
+    }
+    100%{
+        top:120px;
+        background:orange;
+    }
+}
+
+/* 4 Down Right Up Left Movement */
+.shape4{
+    width:0;
+    height:0;
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-bottom:80px solid purple;
+    position:relative;
+    animation:boxmove 5s infinite;
+}
+
+@keyframes boxmove{
+    0%{top:0; left:0;}
+    25%{top:120px; left:0;}
+    50%{top:120px; left:200px;}
+    75%{top:0; left:200px;}
+    100%{top:0; left:0;}
+}
+
+/* 5 Still + 3 Color Change */
+.shape5{
+    width:100px;
+    height:50px;
+    animation:colorchange 3s infinite;
+}
+
+@keyframes colorchange{
+    0%{background:red;}
+    50%{background:yellow;}
+    100%{background:blue;}
+}
+
+div{
+    margin:30px auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Animation with 5 Shapes</h2>
+
+<div class="shape1"></div>
+<div class="shape2"></div>
+<div class="shape3"></div>
+<div class="shape4"></div>
+<div class="shape5"></div>
+
+</body>
+</html>
