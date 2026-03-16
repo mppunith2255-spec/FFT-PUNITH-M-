@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator Layout</title>
+
+<style>
+
+body{
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+}
+
+.calculator{
+background:#000;
+padding:20px;
+border-radius:20px;
+width:260px;
+}
+
+.display{
+color:white;
+font-size:40px;
+text-align:right;
+margin-bottom:15px;
+}
+
+.buttons{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+button{
+height:55px;
+border:none;
+border-radius:50%;
+font-size:20px;
+}
+
+.gray{
+background:#cecece;
+}
+
+.dark{
+background:#333;
+color:white;
+}
+
+.orange{
+background:#df326b;
+color:white;
+}
+
+.zero{
+grid-column:span 2;
+border-radius:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+<div class="display">0</div>
+
+<div class="buttons">
+
+<button class="gray">C</button>
+<button class="gray">+/-</button>
+<button class="gray">%</button>
+<button class="orange">÷</button>
+
+<button class="dark">7</button>
+<button class="dark">8</button>
+<button class="dark">9</button>
+<button class="orange">×</button>
+
+<button class="dark">4</button>
+<button class="dark">5</button>
+<button class="dark">6</button>
+<button class="orange">−</button>
+
+<button class="dark">1</button>
+<button class="dark">2</button>
+<button class="dark">3</button>
+<button class="orange">+</button>
+
+<button class="dark zero">0</button>
+<button class="dark">.</button>
+<button class="orange">=</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
