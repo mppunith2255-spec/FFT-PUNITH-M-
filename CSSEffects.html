@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic CSS Effects</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+.box{
+width:150px;
+height:100px;
+background:skyblue;
+margin:20px auto;
+line-height:100px;
+transition:0.5s;
+}
+
+/* 1. Hover Color Change */
+.color:hover{
+background:orange;
+}
+
+/* 2. Scale Effect */
+.scale:hover{
+transform:scale(1.2);
+}
+
+/* 3. Rotate Effect */
+.rotate:hover{
+transform:rotate(20deg);
+}
+
+/* 4. Shadow Effect */
+.shadow:hover{
+box-shadow:5px 5px 15px gray;
+}
+
+/* 5. Border Change */
+.border:hover{
+border:4px solid red;
+}
+
+/* 6. Opacity Effect */
+.opacity:hover{
+opacity:0.5;
+}
+
+/* 7. Text Color Change */
+.text:hover{
+color:white;
+background:black;
+}
+
+/* 8. Rounded Corners */
+.round:hover{
+border-radius:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Basic CSS Effects</h2>
+
+<div class="box color">Color</div>
+
+<div class="box scale">Scale</div>
+
+<div class="box rotate">Rotate</div>
+
+<div class="box shadow">Shadow</div>
+
+<div class="box border">Border</div>
+
+<div class="box opacity">Opacity</div>
+
+<div class="box text">Text Effect</div>
+
+<div class="box round">Round</div>
+
+</body>
+</html>
